@@ -2,8 +2,8 @@ require 'rubygems'
 require 'mechanize'
 
 data_structure = [
-  {:article_title => 'Lobby index as a network centrality measure', :citations => 0, :authors => ''},
-  {:article_title => 'A new method of identifying influential nodes in complex networks based on TOPSIS', :citations => 0, :authors => ''}
+  {:article_title => 'Lobby index as a network centrality measure', :citations => 0, :authors => []},
+  {:article_title => 'A new method of identifying influential nodes in complex networks based on TOPSIS', :citations => 0, :authors => []}
 ]
 
 #Create the Mechanize agent

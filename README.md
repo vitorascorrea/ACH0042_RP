@@ -1,15 +1,14 @@
 ACH0042 - Resolução de Problemas
+=======
 
-Como rodar o scrapper.rb:
+Projeto de RP com o objetivo final de implementar uma automatização do lobby index em redes de doutores da área de Ciência da Computação.
 
-1) Baixe e instale a última versão do Ruby;
-2) Abra o terminal na pasta em que está o arquivo scrapper.rb;
-3) Execute ruby scrapper.rb
+**Instruções de Instalação (Ubuntu)**
 
-Instruções gerais:
+1. Clone o projeto.
 
-1) O scrapper irá buscar os autores, co-autores e citações de todos os artigos listados no hash data_structure;
+2. `sudo apt-get install ruby`
 
-Melhorias futuras:
+3. `cd` na pasta do projeto, instale as dependencias `gem install mechanize`
 
-[] Fazer comunicação com o Excel
+4. Rode no terminal:`ruby citations_scrapper.rb`

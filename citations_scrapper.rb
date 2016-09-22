@@ -2,7 +2,7 @@ require 'rubygems'
 require 'mechanize'
 
 data_structure = [
-  {:article_title => 'Lobby index as a network centrality measure', :citations => 0, :authors => []},
+  {:article_title => 'Characterization of mycobacteria and mycobacteriophages isolated from compost at the São Paulo Zoo Park Foundation in Brazil and creation of the new mycobacteriophage Cluster U', :citations => 0, :authors => []},
   {:article_title => 'A new method of identifying influential nodes in complex networks based on TOPSIS', :citations => 0, :authors => []}
 ]
 

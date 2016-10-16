@@ -3,7 +3,7 @@ require 'pg'
 
 conn = PG.connect(dbname: ARGV[0])
 
-Now we open the file of all the authors
+# Now we open the file of all the authors
 f = File.open(ARGV[1], "r")
 f.each_line do |line|
   # Main author Creation

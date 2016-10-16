@@ -18,3 +18,5 @@ Projeto de RP com o objetivo final de implementar uma automatização do lobby i
 5. Para a mineração de dados de autores, rode no terminal:`ruby author_reader.rb <NOME_DO_BANCO> <NOME_DO_ARQUIVO_DE_AUTORES>` (obs: o formato de arquivo de autores tem que ser identico ao arquivo `autores_bolsa.txt`)
 
 6. Para a mineração de dados de co-autores, rode no terminal:`ruby lattes_scrapper.rb <NOME_DO_BANCO>` (obs: o nome do banco deve ser o mesmo nos passos 5 e 6 e ter a estrutura descrita no arquivo `schema.sql`)
+
+7. Para verificar o lobby index de um determinado autor `ruby author_lobby_index.rb <NOME_DO_BANCO> <CODIGO_LATTES_DO_AUTOR>`

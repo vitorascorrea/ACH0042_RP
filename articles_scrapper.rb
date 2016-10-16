@@ -24,14 +24,12 @@ data_structure.each do |data|
   #Get the google scholar page and the main form
   page = agent.get 'https://scholar.google.com.br/'
   google_form = page.form('f')
-
+  
   #Fill the search form with the article name
   google_form.q = data[:article_title]
 
   #Submit form
   page = agent.submit(google_form, google_form.buttons.first)
-
-  puts data[:article_title]
 
   #Get authors
   if page.css('.gs_a').text != nil

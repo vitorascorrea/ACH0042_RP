@@ -21,7 +21,7 @@ end
 #k such that x has at least k neighbors with a degree of at least k.
 
 #Here we set our variables
-lobby_index = min_value
+min_value == 99999 ? lobby_index = 1 : lobby_index = min_value
 current_neighbors = co_authors_select
 num_neighbors = 0
 

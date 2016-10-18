@@ -8,6 +8,7 @@ lobby_query = "SELECT COUNT(*) AS degree FROM co_authors WHERE main_author_code 
             ORDER BY degree"
 
 co_authors_select = conn.exec(lobby_query).to_a
+author_name = conn.exec("SELECT author_name FROM authors WHERE author_code = '#{ARGV[1]}'")
 
 #Since our select doesnt show values = 0, we search for the minimum degree
 min_value = 99999
@@ -40,4 +41,4 @@ while true
   end
 end
 
-puts "The lobby index for author #{ARGV[1]} is #{lobby_index}"
+puts "The lobby index for author #{author_name[0]['author_name']}, code #{ARGV[1]}, is #{lobby_index}"

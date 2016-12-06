@@ -13,7 +13,7 @@ url_sniffer = Watir::Browser.new :phantomjs
 
 conn = PG.connect(dbname: ARGV[0])
 
-conn.exec("SELECT author_code FROM (SELECT author_code FROM authors EXCEPT (SELECT author_code FROM authors LIMIT 8017)) AS authors_subquery").each do |author|
+conn.exec("SELECT author_code FROM authors").each do |author|
   # Now we look in Lattes for every co author of the main author
   puts "Inserting for author #{author["author_code"]}"
   begin

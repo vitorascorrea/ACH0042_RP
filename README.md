@@ -20,3 +20,7 @@ Projeto de RP com o objetivo final de implementar uma automatização do lobby i
 6. Para a mineração de dados de co-autores, rode no terminal:`ruby lattes_scrapper.rb <NOME_DO_BANCO>` (obs: o nome do banco deve ser o mesmo nos passos 5 e 6 e ter a estrutura descrita no arquivo `schema.sql`)
 
 7. Para verificar o lobby index de um determinado autor `ruby author_lobby_index.rb <NOME_DO_BANCO> <CODIGO_LATTES_DO_AUTOR>`
+
+8. Para inserir o lobby index de todos os autores `ruby insert_lobby_index_all.rb <NOME_DO_BANCO>`
+
+9. Para inserir o h index do Google Scholar de todos os autores `ruby google_scholar_scrapper.rb <NOME_DO_BANCO>`

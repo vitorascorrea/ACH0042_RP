@@ -2,6 +2,9 @@ CREATE TABLE authors
 (
   author_code character(10) NOT NULL,
   author_name character varying(60) NOT NULL,
+  lobby_index integer,
+  google_h_index integer,
+  prod_bag character varying(50),
   CONSTRAINT authors_pkey PRIMARY KEY (author_code)
 )
 

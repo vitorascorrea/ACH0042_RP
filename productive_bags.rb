@@ -10,6 +10,6 @@ f.each_line do |line|
   nome = line.split(',').to_a.first.split('_').join(' ')
   bolsa = line.split(',').to_a.last
   # We push the main author_data to the db
-  conn.exec("UPDATE authors SET tipo_bolsa = '#{bolsa}' WHERE author_name = '#{nome}' ")
+  conn.exec("UPDATE authors SET prod_bag = '#{bolsa}' WHERE author_name = '#{nome}' ")
 end
 f.close
